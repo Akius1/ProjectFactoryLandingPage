@@ -10,6 +10,7 @@ html {
     color: #000;
     text-align: left;
     background-color: lightgray; 
+    
 }
 
 .header-container{
@@ -585,24 +586,23 @@ button{
 .c-comment{
     text-align: center;
 }
-/* Section 7 Mail Us*/
+/*Section 7 Mail Us*/
 .mail-us{
     background-color: black;
     height: 100%;
-    padding-right: 100px;
     padding-left: 100px;
     margin-top: -150px;
     color: white;
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 50% 50%;
     justify-content: space-between;
-    padding-top: 80px;
+    
 }
 .mail{
+    padding-top: 50px;
     margin-top: 0px;
-    padding-top: 0px;
     padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-rows: auto auto auto auto;
     padding-left: 5%;
@@ -616,25 +616,23 @@ button{
     color: black;
 }
 .mail-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
+    background-image: url("/ProjectFactoryLandingPage/web_image/Union\ 3.png");
+    background-position: center;
+    background-size: cover;
+
 }
-.mail-img-bold{
-    position: absolute;
-    z-index: 2;
-    width:100%;
-    margin-left: 7%;
-}
-.mail-img-faded{
-    position: relative;
-    z-index: 1;
-    width:100%;
-    margin-top: -80px;
-}
-.mail-img-bold img{
+
+
+img.mail-div-image{
     width: 200px;
     height:160px;
 }
+
 .mail-img-faded img{
     width: 400px;
     height:300px;
@@ -650,11 +648,12 @@ button{
     padding-right: 70px;
     padding-left: 70px;
     padding-top: 5px;  
+    padding-bottom: 50px;
 }
 
 .p-col{
     display: grid;
-    grid-template-columns: 60% auto;
+    grid-template-columns: 60% 40%;
     column-gap: 50px;
     justify-content: space-between;
 }
@@ -670,12 +669,13 @@ button{
     text-align: center;
 }
 .project-img{
-    width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .project-img img{
-    width: 400px;
-    height: 400px;
+    max-width: 300px;
+    height: auto;
 }
 /*Schedule section*/
 .section-three{
@@ -834,7 +834,7 @@ button{
     }
     .exp-h3{
     position: absolute;
-      width: fit-content;
+      /*width: fit-content;*/
       text-align: start;
      /*background-color:whitesmoke;*/
   }
@@ -852,7 +852,7 @@ button{
       margin-bottom: 15px;
       text-align: center;
       margin-right: 170px;
-      width: fit-content;
+      /*width: fit-content;*/
      /*background-color: white;*/
   }
     .item-d{
@@ -870,72 +870,4 @@ button{
         color: white;
     }
   
-}
-
-
-
-@media(min-width: 601px) and (max-width: 768px){
-    .faded-index{
-        text-align: center;
-    }
-    .exp-h3{
-    position: absolute;
-      width: fit-content;
-      text-align: start;
-     /*background-color:whitesmoke;*/
-  }
-  .h3{
-    margin-left:-80%;
-    padding: 0px;
-    }
-    .h1{
-        margin-right: 50%;
-    }
-    .item-d{
-        display: block;
-        text-align: center;
-    }
-  .exp-h1{
-      position:relative;
-      z-index: 1;
-      font-size: 3.6rem;
-      font-weight: 700;
-      color: lightgrey;
-      opacity: 0.3;
-      margin-bottom: 15px;
-      text-align: center;
-      margin-right: 170px;
-      width: fit-content;
-     /*background-color: white;*/
-  }
-  .left-end{
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-}
-.right-end{
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    background-color: black;
-    color: white;
-}
-}
-
-@media(min-width: 769px) and (max-width: 992px){
-
-}
-
-@media(min-width: 1000px) and (max-width: 1200px){
-     /*course section*/
-    .exp-h3{
-        margin-left: 33%;
-        /*background-color:whitesmoke;*/
-    }
-    .item-d{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        height: 100%;
-        padding-top: 50px;  
-        border-radius: 10px;
-        font-size: 1.2rem;
-    }
 }
