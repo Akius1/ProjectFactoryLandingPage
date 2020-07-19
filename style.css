@@ -10,12 +10,15 @@ html {
     color: #000;
     text-align: left;
     background-color: lightgray; 
+    height: 100%;
+    width: 100%;
     
 }
 
 .header-container{
     background:#212529;
     height: 400px;
+    width: 100%;
 }
 
 .container {
@@ -70,14 +73,14 @@ html {
     background-color: rgb(50, 42, 58);
     flex-direction: column;
     cursor: pointer;
-    display: none;
+    display: none;  
 }
 .hamburger >*{
     height: 3px;
     width:80% ;
     margin:auto;
     background-color: lightgrey;
-
+    
 }
 .nav-menu ul{
     display: flex;
@@ -103,6 +106,7 @@ html {
 }
 .nav-menu-mobile.show{
     display: block;
+    color: white;
 }
 a {
     all: unset;
@@ -123,7 +127,7 @@ a {
 }
 /* Text div*/
 .text{
-    display: inline-block;
+    display: block;
     height: 100%;
     margin-bottom: 50px;
 }
@@ -143,14 +147,15 @@ a {
     opacity: 0.2;
 }
 .p-text{
-    width: 50%;
+    width: auto;
 }
 button{
     background-color: rgb(222, 96, 13);
     color: white;
     border-radius: 5px;
     border-color: rgb(222, 96, 13);
-    width: 25%;
+    width: auto;
+    
     height: 30px;
 }
 .product img{
@@ -161,8 +166,8 @@ button{
 
 /*Section 1*/
 .section-one{
-    margin-top: 300px;
-    margin-bottom: 300px;
+    margin-top: 200px;
+    margin-bottom:200px;
     /*background-color: tomato;*/
 }
 .about{
@@ -238,7 +243,7 @@ button{
     padding-right: 70px;
     padding-left: 70px;
     padding-top: 5px;
-    margin-top: -150px;
+    margin-top: -100px;
 }
 .faded-index{
     text-align: center;
@@ -330,6 +335,9 @@ button{
 /* End*/
 
 /*Section 3*/
+.session-b{
+    display: none;
+}
 .session{
     background-color: white;
     height: 100%;
@@ -337,7 +345,7 @@ button{
     padding-right: 70px;
     padding-left: 70px;
     padding-top: 5px;
-    margin-top: -150px;
+    margin-top: -100px;
 }
 .session-one{
     padding-left: 30%;
@@ -365,7 +373,7 @@ button{
     /*background-color: yellow;*/
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    /*grid-template-rows: auto auto auto auto;*/
 }
 .F-session{
     display:grid;
@@ -374,7 +382,7 @@ button{
 }
 .session-head{
     display:grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: 30% 70%;
 }
 .s-text{
     display: grid;
@@ -404,8 +412,8 @@ button{
     border-left: 1px solid lightgrey;
 }
 .s-img{
-    width: 30%;
-    height: 40%;
+    width: 100px;
+    height: 100px;
     /*background-color: blanchedalmond;*/
     padding-top: 20px;
 }
@@ -413,8 +421,8 @@ button{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
-    width: 40%;
-    height: 40%;
+    width: 100px;
+    height: 100px;
     padding-top: 20px;
 }
 .s-para{
@@ -444,7 +452,7 @@ button{
     padding-right: 70px;
     padding-left: 70px;
     padding-top: 5px;
-    margin-top: -150px;
+    margin-top: -100px;
 }
 .master-one{
     padding-left: 35%;
@@ -460,37 +468,30 @@ button{
 }
 .m-all{
    display: grid;
-   grid-template-rows: 75% 10% 10%;
+   grid-template-rows: 60% auto;
    background-color: white;
-   justify-content: space-between;
-   height: 100%;
+   justify-content: space-evenly;
    /*background-color:lightslategray;*/
 }
-.m-body{
-    width: 100%;
-    height: 100%;
-    padding-top: 20px;
-    justify-self: center;
-}
-.m-body img{
-    width: 100px;
-    height: 100px;
-}
-.m-name{
-   justify-self: start; 
-   margin-top: 0px;
-   margin-bottom: 5px;
-   font-weight: 500;
-   width: 100%;
-}
-.m-role{
-    justify-self: start;
-    margin-top: 0px;
+.master-text{
     margin-bottom: 5px;
-    font-size: 1.3rem;
-    width:100%;
+    margin-top: 5px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
+.m-body{
+    width: 150px;
+    height: 150px;
+    padding-top: 20px;
+    justify-self: center;
+    
+}
+.m-body img{
+    width: 100%;
+    height: 100%;
+}
 /* Section 5 Faq*/
 
 .faq{
@@ -500,7 +501,11 @@ button{
     padding-right: 70px;
     padding-left: 70px;
     padding-top: 5px;
-    margin-top: -150px;
+    margin-top: -100px;
+}
+.faq-one{
+    padding-left: 35%;
+    /*background-color: thistle;*/
 }
 .div-logoh1{
     position:relative;
@@ -553,6 +558,9 @@ button{
     column-gap: 5%;
     
 }
+.fee-one{
+    padding-left: 30%;
+}
 .cf-h3{
     padding-left: 40px;
 }
@@ -591,7 +599,7 @@ button{
     background-color: black;
     height: 100%;
     padding-left: 100px;
-    margin-top: -150px;
+    margin-top: -100px;
     color: white;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -641,7 +649,10 @@ img.mail-div-image{
 /*Project section*/
 .section-two{
     background-color: white;
-    margin-top: -300px;
+    margin-top: -100px;
+}
+.project-one{
+    padding-left: 30%;
 }
 .project{
     height: 100%;
@@ -681,6 +692,7 @@ img.mail-div-image{
 .section-three{
     background-color: rgba(252, 248, 248, 0.87);
     opacity: 1;
+    
 }
 
 .schedule{
@@ -704,7 +716,7 @@ img.mail-div-image{
 .date-1{
     background-color: white;
     color: black;
-    width: fill;
+    min-width: 200px;
     opacity: 1;
     border-radius: 10px;
     font-size: 2.0rem;
@@ -717,7 +729,6 @@ img.mail-div-image{
     width: 80%;
     height: 10px;
     padding-top: 20px;
-
 }
 .s-image img{
     width: 100%;
@@ -745,7 +756,7 @@ img.mail-div-image{
 /*Footer layout*/
 
 .footer-layout{
-        height: 100%;
+        /*height: 100%;*/
         padding-right: 70px;
         padding-left: 70px;
         padding-top: 5px;  
@@ -767,43 +778,59 @@ img.mail-div-image{
 /*Media Queries*/
 /*Hamburger*/
 @media(max-width: 600px){
+    .header-container{
+        margin-left: 10px;
+        min-height: 400px;
+    }
+    .nav-container{
+        margin-left: 0px;
+    }
+    .full-screen{
+        margin-left: -15px;
+    }
     .nav-menu ul{
         display: none;
     }
     .hamburger{
-        display: flex;
+        display: flex;  
     }
     .product{
         display: block;
         justify-content: center;
-        font-size: 1.4rem;
-        margin: auto; 
-        padding-left: 150px;  
-
+        align-items: center;
     }
     .product img{
-        height: 150px;
-        width: 200px;
-        margin-bottom: 50px;
+        display: none;
     }
     .text{
-        display: block;
         height: 100%;
         margin-bottom: 20px;
+        text-align: center;
+    }
+    .p-text{
+        width: auto;
     }
     .text h1{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+    }
+    .factory{
+        padding-left: 35px;
     }
     button{
         border-radius: 5px;
         border-color: rgb(222, 96, 13);
-        width: 50%;
+        width: auto;
         height: 20px;
+        margin-bottom: 20px;
     }
     /*about section*/
+    .section-one{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        /*background-color: tomato;*/
+    }
     .image-one{
-        top: -50px;
-        height: 100px;
+        display: none;
     }
     .about-zero{
         display: block;
@@ -829,35 +856,33 @@ img.mail-div-image{
     }
 
     /* Course Section*/
+    .course{
+        margin-top: 50px;
+    }
     .faded-index{
-        text-align: center;
+        text-align: justify;
     }
     .exp-h3{
-    position: absolute;
-      /*width: fit-content;*/
-      text-align: start;
-     /*background-color:whitesmoke;*/
+        position: absolute;
+        margin-top: 15px;
   }
   .h3{
     margin-left: -50%;
-    padding: 0px;
-}
+    }
   .exp-h1{
       position:relative;
       z-index: 1;
-      font-size: 3.6rem;
-      font-weight: 700;
+      font-size: 3.0rem;
+      font-weight: 600;
       color: lightgrey;
       opacity: 0.3;
-      margin-bottom: 15px;
-      text-align: center;
-      margin-right: 170px;
-      /*width: fit-content;*/
-     /*background-color: white;*/
   }
     .item-d{
         display: block;
         text-align: center;
+    }
+    .item-b h3{
+        font-size: 1.5rem;
     }
     .left-end{
         border-top-left-radius: 0px;
@@ -869,5 +894,237 @@ img.mail-div-image{
         background-color: black;
         color: white;
     }
+    .item-e{
+        display: none;
+    }
+    .item-c{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Session Section  3rd Section*/
+
+    .session{
+        display: none;
+    }
+    .session-b{
+        display: block;
+        margin-top: 100px;
+        background-color: white;
+        height: 100%;
+        border-radius: 20px;
+        padding-right: 70px;
+        padding-left: 70px;
+        padding-top: 5px;
+    }
+
+    .session-one{
+        padding-left: 0;
+        /*background-color: thistle;*/
+    }
+    .session-content{
+        display: grid;
+        grid-template-rows: 30% 70%;
+        margin-bottom: 10px;
+    }
+    .session-heading{
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    .s-text{
+        height: 20px;
+    }
+    .s-cols-2{
+        /*background-color: lightcoral;*/
+        display: grid;
+        grid-template-columns: 40% 58%;
+        column-gap: 5px;
+        font-size: 1.3rem;
+    }
+    .s-img{
+        width: 80px;
+        height: 80px;
+        /*background-color: blanchedalmond;*/
+        padding-top: 20px;
+    }
+    .session-body-two{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        padding: 10px;
+    }
+    .s-two{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90px;
+        height: 100px;
+        padding-top: 20px;
+    }
+
+    /*Master Section  3rd Section*/
+    .master{
+        margin-top: 100px;
+    }
+    .master-one{
+        padding-left: 0;
+    }
+    .master-two{
+        display: grid;
+        grid-template-columns: 60% 30%;
+    }
+    .m-all{
+        display: grid;
+        grid-template-rows: 60% auto;
+        background-color: white;
+        justify-content: space-between;
+        font-size: 1.0 rem;
+        margin-bottom: 20px;
+        /*background-color:lightslategray;*/
+     }
+
+     .m-body{
+        width: 100px;
+        height: 100px;
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+    .m-body img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*faq Section  4rd Section*/
+    .faq{
+        margin-top: 100px;
+    }
+    /*couse fee section 5*/
+
+    .fee-grid{
+        display: block;  
+    }
+    .fee-one{
+        padding-left: 0px;;
+    }
+    .fee-one h1{
+        align-items: center;
+        font-size: 3.6rem;
+        padding-top: 32px;
+    }
+
+    .cf-h3{
+        padding-left: 5px;
+        padding-bottom: 50px;
+    }
+    .c-comment{
+        margin-top: 50px;
+    }
+    /*Email Section 6th section*/
+    .mail-us{
+        display: block;
+        margin-top: 100px;
+        padding-left: 25px;
+        margin-left: 25px;
+    }
+    .mail{
+        display: block;
+        /*text-align: center;*/
+    }
+    .mail-div{
+        display: none;
+    }
+    
+    /*Project section*/
+    .section-two{
+        margin-top: 100px;
+        margin-left: 25px;
+    }
+    .project-one{
+        padding-left: 0px;
+    }
+    .project-one h1{
+        align-items: center;
+        font-size: 4.0rem;
+        padding-top: 32px;
+    }
+    /*.project{
+        margin-left: 20px;
+    }*/
+    .p-col{
+        display: block;
+    }
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .project-img{
+        margin-top: 50px;
+    }
+
+    /* Schedule */
+    .schedule{
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 10px;
+    }
+    .s-start{
+        max-width: 200px;
+        margin-left:0px;
+        font-weight: bold;
+        font-size: 1.0rem;
+        justify-content: space-evenly;
+    }
+    .s-image{
+        max-width: 100px;
+        min-height: 10px;
+        padding-left: 10px;
+    }
+    .s-date{
+        max-width: 100px;
+        padding-right: 20px;
+        margin-left: -15px;
+    }
+
+    .s-day{
+        display: block;
+        max-width: 200px;
+        padding-left: 0px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .box-2{
+        margin-left: 80px;
+    }
   
+    .date-1{
+        min-width: 100px;
+        opacity: 1;
+        border-radius: 10px;
+        font-size: 1.0rem;
+        font-weight: 900px;
+    }
+
+    /* footer*/
+    .footer-img{
+        height: 20px;
+        width: 50px;
+        margin-top: 20px;
+    }
+    .footer-contact p{
+        margin-top: 20px;
+    
+        font-size: 0.5rem;
+
+    }
+    .footer-layout{
+        /*height: 100%;*/
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 0px;
+        justify-content: space-evenly;  
+    }
+
 }
+
